@@ -75,7 +75,7 @@ class Client
     
     public function send($message = '') {
         if (!empty($message)) {
-            $this->message = $message;
+            $this->message = substr($message, 0, 2000); // Discord API limits strings to 2000 chars per message
         }
         
         $url = $this->url;
@@ -102,7 +102,7 @@ class Client
         $output = json_decode($output, true);
         
         if (curl_getinfo($curl, CURLINFO_HTTP_CODE) != 204) {
-            throw new Exception($output['message']);
+            throw new \Exception(var_export($output, true));
         }
         
         curl_close($curl);
