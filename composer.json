@@ -7,7 +7,7 @@
     "type": "wrapper",
     "require": {
         "php": "^5.3",
-        "ext-curl": "^0.0.0"
+        "ext-curl": "*"
     },
     "authors": [
         {
