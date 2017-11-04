@@ -6,7 +6,7 @@
     "license": "Unlicense",
     "type": "wrapper",
     "require": {
-        "php": "^7.0",
+        "php": "*",
         "ext-curl": "*"
     },
     "authors": [
