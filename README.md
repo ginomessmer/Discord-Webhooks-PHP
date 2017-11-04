@@ -1,6 +1,10 @@
 Discord Webhooks Wrapper for PHP
 ====
 
+**Forked from https://github.com/AuroraAri/Discord-Webhooks-PHP with critical fixes and additions**
+
+---
+
 A lightweight wrapper to interact with [Discord](https://discordapp.com) webhooks!
 
 ### Getting Started
